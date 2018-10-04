@@ -1,6 +1,6 @@
 # scroll-class.js
 
-scroll-class.js is a small ES6 module that let's you toggle classes to elements when they appear in the viewport.
+scroll-class.js is a small ES6 module that lets you toggle classes on elements when they appear in the viewport.
 
   - ES6 ready
   - No dependencies
