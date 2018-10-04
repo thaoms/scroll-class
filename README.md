@@ -16,7 +16,8 @@ const elements  = [
     	element: document.querySelector('.your-element'),
     	classesToToggle: ['hello'],
     	once: true,
-    	enabled: true
+    	enabled: true,
+		events: true
     }
 ];
 
@@ -32,9 +33,25 @@ new ScrollClass({
      - `classesToToggle [array]`: class(es) you want to toggle on the given element
      - `once [bool]`: only add the class once
      - `enabled [bool]`: this one explains itself.
+	 - `events [bool]`: do you want events with that? See below for more info.
 
 
  - `frequency [bool] (default: true)` : the amount of time between checks. (throttling - useful for performance)
+
+### Events
+
+Each element can also receive an `insideViewport` and `outsideViewport` event.<br />
+(use these before your `new ScrollClass` block if you don't want to miss the initial event)
+
+```
+document.querySelector('.your-element').addEventListener('insideViewport', function(){
+	console.log(`I see you! ${this}`);
+});
+
+document.querySelector('.your-element').addEventListener('outsideViewport', function(){
+	console.log(`I can't see you. ${this}`);
+});
+```
 
 License
 ----

@@ -12,6 +12,10 @@ export default class ScrollClass{
 	*/
 	constructor( options ){
 
+		// initialize events
+		this.eventIn = new Event('insideViewport');
+		this.eventOut = new Event('outsideViewport');
+
 		// set defaults and merge with give options
 		let { _ticking = false,
 			elements = [],
@@ -37,10 +41,15 @@ export default class ScrollClass{
 		elementsToAnim.forEach( (elementObj ) => {
 			if (this.isInViewport( elementObj )) {
 				if(elementObj.enabled) {
-					elementObj.element.classList.add(...elementObj.classesToToggle);
+					elementObj.classesToToggle.forEach( (className) => {
+						elementObj.element.classList.add(className); });
 					(!elementObj.once) ? elementObj.enabled = true : elementObj.enabled = false; }
+				if (elementObj.events) elementObj.element.dispatchEvent(this.eventIn);
 			} else {
-				elementObj.element.classList.remove(...elementObj.classesToToggle); }
+				elementObj.classesToToggle.forEach( (className) => {
+					elementObj.element.classList.remove(className); });
+				if (elementObj.events) elementObj.element.dispatchEvent(this.eventOut);
+			}
 		});
 	}
 
