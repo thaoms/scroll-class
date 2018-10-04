@@ -17,7 +17,8 @@ const elements  = [
     	classesToToggle: ['hello'],
     	once: true,
     	enabled: true,
-    	events: true
+    	events: true,
+    	treshold: 100
     }
 ];
 
@@ -33,7 +34,8 @@ new ScrollClass({
      - `classesToToggle [array]`: class(es) you want to toggle on the given element
      - `once [bool]`: only add the class once
      - `enabled [bool]`: this one explains itself.
-	 - `events [bool]`: do you want events with that? See below for more info.
+     - `events [bool]`: do you want events with that? See below for more info.
+     - `treshold: [int]`: treshold from top (without px postfix) - default is 0.
 
 
  - `frequency [bool] (default: true)` : the amount of time between checks. (throttling - useful for performance)
