@@ -17,13 +17,13 @@ const elements  = [
     	classesToToggle: ['hello'],
     	once: true,
     	enabled: true,
-		events: true
+    	events: true
     }
 ];
 
 new ScrollClass({
-	elements: elements,
-	frequency: 500
+    elements: elements,
+    frequency: 500
 });
 ```
 
@@ -45,11 +45,11 @@ Each element can also receive an `insideViewport` and `outsideViewport` event.<b
 
 ```
 document.querySelector('.your-element').addEventListener('insideViewport', function(){
-	console.log(`I see you! ${this}`);
+     console.log(`I see you! ${this}`);
 });
 
 document.querySelector('.your-element').addEventListener('outsideViewport', function(){
-	console.log(`I can't see you. ${this}`);
+    console.log(`I can't see you. ${this}`);
 });
 ```
 
