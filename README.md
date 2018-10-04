@@ -4,7 +4,7 @@ scroll-class.js is a small ES6 module that lets you toggle classes on elements w
 
   - ES6 ready
   - No dependencies
-  - Performant and lightweight - 1.86 KB (unminfied and no gzip)
+  - Performant and lightweight - 1.86 KB (unminified and no gzip)
 
 ### Development
 
@@ -18,7 +18,7 @@ const elements  = [
     	once: true,
     	enabled: true,
     	events: true,
-    	treshold: 100
+    	threshold: 100
     }
 ];
 
@@ -35,7 +35,7 @@ new ScrollClass({
      - `once [bool]`: only add the class once
      - `enabled [bool]`: this one explains itself.
      - `events [bool]`: do you want events with that? See below for more info.
-     - `treshold: [int]`: treshold from top (without px postfix) - default is 0.
+     - `threshold: [int]`: threshold from top (without px postfix) - default is 0.
 
 
  - `frequency [bool] (default: true)` : the amount of time between checks. (throttling - useful for performance)

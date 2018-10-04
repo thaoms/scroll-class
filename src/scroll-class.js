@@ -59,11 +59,11 @@ export default class ScrollClass{
 	isInViewport(elementObj) {
 		const element = elementObj.element;
 		const bounding = element.getBoundingClientRect();
-		const treshold = (elementObj.treshold) ? elementObj.treshold : 0;
+		const threshold = (elementObj.threshold) ? elementObj.threshold : 0;
 
 		// return if in viewport or not.
 		return (
-			bounding.top >= treshold && bounding.left >= 0 &&
+			bounding.top >= threshold && bounding.left >= 0 &&
 			bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
 			bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
 		);
