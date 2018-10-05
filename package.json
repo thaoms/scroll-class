@@ -1,6 +1,6 @@
 {
 	"name": "scroll-class.js",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "scroll-class.js is a small ES6 module that lets you toggle classes on elements when they appear in the viewport.",
 	"keywords": [
 		"scroll",
