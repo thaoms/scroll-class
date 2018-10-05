@@ -16,7 +16,7 @@ $ yarn add scroll-class.js
 ### Development
 
 ```
-import ScrollClass from './scroll-class';
+import ScrollClass from 'scroll-class.js';
 
 const elements  = [
     {
