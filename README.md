@@ -8,7 +8,9 @@ scroll-class.js is a small ES6 module that lets you toggle classes on elements w
 
 ### Installation
 
-`yarn add scroll-class.js`
+```sh
+$ yarn add scroll-class.js
+```
 
 
 ### Development
