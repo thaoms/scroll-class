@@ -6,6 +6,11 @@ scroll-class.js is a small ES6 module that lets you toggle classes on elements w
   - No dependencies
   - Performant and lightweight - 1.86 KB (unminified and no gzip)
 
+### Installation
+
+`yarn add scroll-class.js`
+
+
 ### Development
 
 ```
