@@ -1,0 +1,26 @@
+{
+	"name": "scroll-class.js",
+	"version": "1.0.0",
+	"description": "scroll-class.js is a small ES6 module that lets you toggle classes on elements when they appear in the viewport.",
+	"keywords": [
+		"scroll",
+		"class",
+		"es6",
+		"viewport"
+	],
+	"main": "src/scroll-class.js",
+	"author": {
+		"name": "Thomas Van Kerckvoorde",
+		"email": "thomas@chilli.be",
+		"url": "https://chilli.be"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thaoms/scroll-class"
+	},
+	"bugs": {
+		"url": "https://github.com/thaoms/scroll-class/issues",
+		"email": "thomasvk@protonmail.com"
+	}
+}
